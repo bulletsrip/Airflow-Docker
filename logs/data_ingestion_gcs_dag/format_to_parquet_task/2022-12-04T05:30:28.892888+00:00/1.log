@@ -1,0 +1,22 @@
+[2022-12-04 05:30:57,486] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.format_to_parquet_task manual__2022-12-04T05:30:28.892888+00:00 [queued]>
+[2022-12-04 05:30:57,502] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.format_to_parquet_task manual__2022-12-04T05:30:28.892888+00:00 [queued]>
+[2022-12-04 05:30:57,502] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-04 05:30:57,503] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-12-04 05:30:57,503] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-04 05:30:57,521] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): format_to_parquet_task> on 2022-12-04 05:30:28.892888+00:00
+[2022-12-04 05:30:57,531] {standard_task_runner.py:52} INFO - Started process 2620 to run task
+[2022-12-04 05:30:57,534] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'format_to_parquet_task', 'manual__2022-12-04T05:30:28.892888+00:00', '--job-id', '223', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_gcs_dag.py', '--cfg-path', '/tmp/tmpnk_sv_tt', '--error-file', '/tmp/tmpqws8qxx4']
+[2022-12-04 05:30:57,535] {standard_task_runner.py:77} INFO - Job 223: Subtask format_to_parquet_task
+[2022-12-04 05:30:57,611] {logging_mixin.py:109} INFO - Running <TaskInstance: data_ingestion_gcs_dag.format_to_parquet_task manual__2022-12-04T05:30:28.892888+00:00 [running]> on host f96e892f1d4c
+[2022-12-04 05:30:57,702] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=format_to_parquet_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-04T05:30:28.892888+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-04T05:30:28.892888+00:00
+[2022-12-04 05:30:57,971] {python.py:175} INFO - Done. Returned value was: None
+[2022-12-04 05:30:57,989] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=data_ingestion_gcs_dag, task_id=format_to_parquet_task, execution_date=20221204T053028, start_date=20221204T053057, end_date=20221204T053057
+[2022-12-04 05:30:58,028] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-12-04 05:30:58,090] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

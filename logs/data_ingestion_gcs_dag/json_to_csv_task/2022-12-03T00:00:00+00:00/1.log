@@ -1,0 +1,218 @@
+[2022-12-04 05:30:37,109] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.json_to_csv_task scheduled__2022-12-03T00:00:00+00:00 [queued]>
+[2022-12-04 05:30:37,125] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.json_to_csv_task scheduled__2022-12-03T00:00:00+00:00 [queued]>
+[2022-12-04 05:30:37,125] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-04 05:30:37,125] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-12-04 05:30:37,125] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-04 05:30:37,145] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): json_to_csv_task> on 2022-12-03 00:00:00+00:00
+[2022-12-04 05:30:37,152] {standard_task_runner.py:52} INFO - Started process 2590 to run task
+[2022-12-04 05:30:37,155] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'json_to_csv_task', 'scheduled__2022-12-03T00:00:00+00:00', '--job-id', '217', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_gcs_dag.py', '--cfg-path', '/tmp/tmpkb20hrk6', '--error-file', '/tmp/tmp6sdlnpyk']
+[2022-12-04 05:30:37,156] {standard_task_runner.py:77} INFO - Job 217: Subtask json_to_csv_task
+[2022-12-04 05:30:37,217] {logging_mixin.py:109} INFO - Running <TaskInstance: data_ingestion_gcs_dag.json_to_csv_task scheduled__2022-12-03T00:00:00+00:00 [running]> on host f96e892f1d4c
+[2022-12-04 05:30:37,289] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=json_to_csv_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-03T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-03T00:00:00+00:00
+[2022-12-04 05:30:37,300] {python.py:175} INFO - Done. Returned value was: None
+[2022-12-04 05:30:37,315] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=data_ingestion_gcs_dag, task_id=json_to_csv_task, execution_date=20221203T000000, start_date=20221204T053037, end_date=20221204T053037
+[2022-12-04 05:30:37,368] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-12-04 05:30:37,425] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-12-04 05:40:40,325] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.json_to_csv_task scheduled__2022-12-03T00:00:00+00:00 [queued]>
+[2022-12-04 05:40:40,345] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.json_to_csv_task scheduled__2022-12-03T00:00:00+00:00 [queued]>
+[2022-12-04 05:40:40,346] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-04 05:40:40,346] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-12-04 05:40:40,346] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-04 05:40:40,369] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): json_to_csv_task> on 2022-12-03 00:00:00+00:00
+[2022-12-04 05:40:40,375] {standard_task_runner.py:52} INFO - Started process 2948 to run task
+[2022-12-04 05:40:40,382] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'json_to_csv_task', 'scheduled__2022-12-03T00:00:00+00:00', '--job-id', '227', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_gcs_dag.py', '--cfg-path', '/tmp/tmpthkvoghz', '--error-file', '/tmp/tmp02wbm_9x']
+[2022-12-04 05:40:40,383] {standard_task_runner.py:77} INFO - Job 227: Subtask json_to_csv_task
+[2022-12-04 05:40:40,454] {logging_mixin.py:109} INFO - Running <TaskInstance: data_ingestion_gcs_dag.json_to_csv_task scheduled__2022-12-03T00:00:00+00:00 [running]> on host f96e892f1d4c
+[2022-12-04 05:40:40,537] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=json_to_csv_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-03T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-03T00:00:00+00:00
+[2022-12-04 05:40:40,538] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/data_ingestion_gcs_dag.py", line 41, in save_as_csv
+    df = pd.json_normalize(data_json, record_path['data']).to_csv(src_file, index=False)
+NameError: name 'record_path' is not defined
+[2022-12-04 05:40:40,562] {taskinstance.py:1277} INFO - Marking task as UP_FOR_RETRY. dag_id=data_ingestion_gcs_dag, task_id=json_to_csv_task, execution_date=20221203T000000, start_date=20221204T054040, end_date=20221204T054040
+[2022-12-04 05:40:40,589] {standard_task_runner.py:92} ERROR - Failed to execute job 227 for task json_to_csv_task
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/data_ingestion_gcs_dag.py", line 41, in save_as_csv
+    df = pd.json_normalize(data_json, record_path['data']).to_csv(src_file, index=False)
+NameError: name 'record_path' is not defined
+[2022-12-04 05:40:40,631] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-12-04 05:40:40,713] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-12-04 05:42:25,499] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.json_to_csv_task scheduled__2022-12-03T00:00:00+00:00 [queued]>
+[2022-12-04 05:42:25,545] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.json_to_csv_task scheduled__2022-12-03T00:00:00+00:00 [queued]>
+[2022-12-04 05:42:25,545] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-04 05:42:25,546] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-12-04 05:42:25,546] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-04 05:42:25,592] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): json_to_csv_task> on 2022-12-03 00:00:00+00:00
+[2022-12-04 05:42:25,607] {standard_task_runner.py:52} INFO - Started process 3008 to run task
+[2022-12-04 05:42:25,625] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'json_to_csv_task', 'scheduled__2022-12-03T00:00:00+00:00', '--job-id', '229', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_gcs_dag.py', '--cfg-path', '/tmp/tmpwtlhjshn', '--error-file', '/tmp/tmpgoonfsyw']
+[2022-12-04 05:42:25,628] {standard_task_runner.py:77} INFO - Job 229: Subtask json_to_csv_task
+[2022-12-04 05:42:25,776] {logging_mixin.py:109} INFO - Running <TaskInstance: data_ingestion_gcs_dag.json_to_csv_task scheduled__2022-12-03T00:00:00+00:00 [running]> on host f96e892f1d4c
+[2022-12-04 05:42:25,981] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=json_to_csv_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-03T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-03T00:00:00+00:00
+[2022-12-04 05:42:25,986] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/data_ingestion_gcs_dag.py", line 41, in save_as_csv
+    df = pd.json_normalize(data_json, record_path['data']).to_csv(src_file, index=False)
+NameError: name 'record_path' is not defined
+[2022-12-04 05:42:26,043] {taskinstance.py:1277} INFO - Marking task as UP_FOR_RETRY. dag_id=data_ingestion_gcs_dag, task_id=json_to_csv_task, execution_date=20221203T000000, start_date=20221204T054225, end_date=20221204T054226
+[2022-12-04 05:42:26,088] {standard_task_runner.py:92} ERROR - Failed to execute job 229 for task json_to_csv_task
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/data_ingestion_gcs_dag.py", line 41, in save_as_csv
+    df = pd.json_normalize(data_json, record_path['data']).to_csv(src_file, index=False)
+NameError: name 'record_path' is not defined
+[2022-12-04 05:42:26,126] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-12-04 05:42:26,287] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-12-04 05:46:02,975] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.json_to_csv_task scheduled__2022-12-03T00:00:00+00:00 [queued]>
+[2022-12-04 05:46:03,044] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.json_to_csv_task scheduled__2022-12-03T00:00:00+00:00 [queued]>
+[2022-12-04 05:46:03,053] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-04 05:46:03,053] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-12-04 05:46:03,053] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-04 05:46:03,099] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): json_to_csv_task> on 2022-12-03 00:00:00+00:00
+[2022-12-04 05:46:03,110] {standard_task_runner.py:52} INFO - Started process 3131 to run task
+[2022-12-04 05:46:03,141] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'json_to_csv_task', 'scheduled__2022-12-03T00:00:00+00:00', '--job-id', '231', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_gcs_dag.py', '--cfg-path', '/tmp/tmpys2l8uje', '--error-file', '/tmp/tmpg33k8q90']
+[2022-12-04 05:46:03,151] {standard_task_runner.py:77} INFO - Job 231: Subtask json_to_csv_task
+[2022-12-04 05:46:03,359] {logging_mixin.py:109} INFO - Running <TaskInstance: data_ingestion_gcs_dag.json_to_csv_task scheduled__2022-12-03T00:00:00+00:00 [running]> on host f96e892f1d4c
+[2022-12-04 05:46:03,706] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=json_to_csv_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-03T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-03T00:00:00+00:00
+[2022-12-04 05:46:03,734] {python.py:175} INFO - Done. Returned value was: None
+[2022-12-04 05:46:03,807] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=data_ingestion_gcs_dag, task_id=json_to_csv_task, execution_date=20221203T000000, start_date=20221204T054602, end_date=20221204T054603
+[2022-12-04 05:46:03,961] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-12-04 05:46:04,205] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-12-04 05:53:31,131] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.json_to_csv_task scheduled__2022-12-03T00:00:00+00:00 [queued]>
+[2022-12-04 05:53:31,181] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.json_to_csv_task scheduled__2022-12-03T00:00:00+00:00 [queued]>
+[2022-12-04 05:53:31,181] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-04 05:53:31,181] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-12-04 05:53:31,181] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-04 05:53:31,221] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): json_to_csv_task> on 2022-12-03 00:00:00+00:00
+[2022-12-04 05:53:31,228] {standard_task_runner.py:52} INFO - Started process 3404 to run task
+[2022-12-04 05:53:31,243] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'json_to_csv_task', 'scheduled__2022-12-03T00:00:00+00:00', '--job-id', '241', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_gcs_dag.py', '--cfg-path', '/tmp/tmpocnwo2zz', '--error-file', '/tmp/tmpffwxlar0']
+[2022-12-04 05:53:31,253] {standard_task_runner.py:77} INFO - Job 241: Subtask json_to_csv_task
+[2022-12-04 05:53:31,407] {logging_mixin.py:109} INFO - Running <TaskInstance: data_ingestion_gcs_dag.json_to_csv_task scheduled__2022-12-03T00:00:00+00:00 [running]> on host f96e892f1d4c
+[2022-12-04 05:53:31,558] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=json_to_csv_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-03T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-03T00:00:00+00:00
+[2022-12-04 05:53:31,587] {python.py:175} INFO - Done. Returned value was: None
+[2022-12-04 05:53:31,637] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=data_ingestion_gcs_dag, task_id=json_to_csv_task, execution_date=20221203T000000, start_date=20221204T055331, end_date=20221204T055331
+[2022-12-04 05:53:31,716] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-12-04 05:53:31,833] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-12-04 05:57:34,292] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.json_to_csv_task scheduled__2022-12-03T00:00:00+00:00 [queued]>
+[2022-12-04 05:57:34,312] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_gcs_dag.json_to_csv_task scheduled__2022-12-03T00:00:00+00:00 [queued]>
+[2022-12-04 05:57:34,313] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-04 05:57:34,313] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-12-04 05:57:34,313] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-04 05:57:34,334] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): json_to_csv_task> on 2022-12-03 00:00:00+00:00
+[2022-12-04 05:57:34,340] {standard_task_runner.py:52} INFO - Started process 3557 to run task
+[2022-12-04 05:57:34,346] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_gcs_dag', 'json_to_csv_task', 'scheduled__2022-12-03T00:00:00+00:00', '--job-id', '251', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_gcs_dag.py', '--cfg-path', '/tmp/tmpreqy8n_u', '--error-file', '/tmp/tmpfc9dx6cc']
+[2022-12-04 05:57:34,347] {standard_task_runner.py:77} INFO - Job 251: Subtask json_to_csv_task
+[2022-12-04 05:57:34,433] {logging_mixin.py:109} INFO - Running <TaskInstance: data_ingestion_gcs_dag.json_to_csv_task scheduled__2022-12-03T00:00:00+00:00 [running]> on host f96e892f1d4c
+[2022-12-04 05:57:34,587] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=json_to_csv_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-03T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-03T00:00:00+00:00
+[2022-12-04 05:57:34,602] {python.py:175} INFO - Done. Returned value was: None
+[2022-12-04 05:57:34,630] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=data_ingestion_gcs_dag, task_id=json_to_csv_task, execution_date=20221203T000000, start_date=20221204T055734, end_date=20221204T055734
+[2022-12-04 05:57:34,682] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-12-04 05:57:34,757] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
