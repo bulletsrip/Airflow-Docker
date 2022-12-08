@@ -17,3 +17,4 @@ in your `docker-compose.yaml`:
    * Change `AIRFLOW__CORE__LOAD_EXAMPLES` to `false` (optional)
    
  ## Run 'docker compose up'
+![WebUI](https://user-images.githubusercontent.com/85284506/206387162-4550fac3-0b91-4a2d-903e-8946c22c7509.jpg)
