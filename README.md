@@ -18,3 +18,11 @@ in your `docker-compose.yaml`:
    
  ## Run 'docker compose up'
 ![WebUI](https://user-images.githubusercontent.com/85284506/206387162-4550fac3-0b91-4a2d-903e-8946c22c7509.jpg)
+
+## DAG Task
+```call_dataset_task >> save_as_csv_task >> format_to_parquet_task >> local_to_gcs_task >> bigquery_external_table_task```
++ call_dataset_task: Extracing `.json` data from a URL
++ save_as_csv_task: format `.json` downloaded files to `.csv`
++ format_to_parquet_task: format format `.csv` file to `.parquet`
++ local_to_gcs_task: Load the data to Google Cloud Storage
++ bigquery_external_table_task: Create external table on Bigquery from Google Cloud Storage file
