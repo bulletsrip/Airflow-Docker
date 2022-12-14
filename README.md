@@ -1,6 +1,8 @@
 # DataFellowship8-Airflow
-Deploy Airflow on Google Cloud Platform with Docker
-by Yuditya Mulia Insani - DF8
+![image](https://user-images.githubusercontent.com/85284506/207533681-cff7d5fe-3703-45eb-816b-c390169f7619.png)
+
+Deploy Airflow on Google Cloud Platform with Docker and create DAG script for ingesting data to Google Cloud Storage + Bigquery External Table
+
 
 ## Create access credentials
 *   Go to https://cloud.google.com/iam/docs/creating-managing-service-accounts
